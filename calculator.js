@@ -18,7 +18,7 @@ class calculator() {
 			currentValue /= newValue;
 			return currentValue;
 		} else {
-			return 0;
+			return currentValue;
 		}
 	}
 }
