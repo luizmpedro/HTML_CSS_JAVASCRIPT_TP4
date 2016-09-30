@@ -4,27 +4,21 @@ class calculator() {
 		this.currentValue = initialValue;
 	}
 	
-	constructor() {
-		this.currentValue = 0;
-	}
-	
-	operate(newValue;"sum"){
-		currentValue += newValue;
-		return currentValue;
-	}
-	
-	operate(newValue;"subtract"){
-		currentValue -= newValue;
-		return currentValue;
-	}
-	
-	operate(newValue;"multiply"){
-		currentValue *= newValue;
-		return currentValue;
-	}
-	
-	operate(newValue;"divide"){
-		currentValue /= newValue;
-		return currentValue;
+	operate(newValue;operation) {		
+		if (operation == "sum") {
+			currentValue += newValue;
+			return currentValue;
+		} else if (operation == "subtract") {
+			currentValue -= newValue;
+			return currentValue;
+		} else if (operation == "multiply") {
+			currentValue *= newValue;
+			return currentValue;
+		} else if (operation == "divide") {
+			currentValue /= newValue;
+			return currentValue;
+		} else {
+			return 0;
+		}
 	}
 }
